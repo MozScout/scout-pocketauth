@@ -117,6 +117,7 @@ app.get('/redirecturi', function(req, res) {
 var server = app.listen(3000, function () {
   logger.debug('initializing startup shim');
 });
+module.exports = server
 
 // this function is called when you want the server to die gracefully
 // i.e. wait for existing connections
